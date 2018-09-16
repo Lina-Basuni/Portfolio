@@ -1,18 +1,23 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './lb2.png';
 import './App.css';
+import MainPage from './mainPage'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <div className="logo-container">
+            <img src={logo} className="App-logo" alt="logo" />
+          </div>
+          <div className="title-container">
+
+          </div>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <div className="App-intro">
+          <MainPage/>
+        </div>
       </div>
     );
   }
