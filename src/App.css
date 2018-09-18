@@ -1,5 +1,5 @@
 .App{
-    height:657px;
+    height:662px;
     background-image: url("background.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -21,7 +21,7 @@
 }
 
 .logo-container{
-  width: 50%;
+  width: 60%;
   height: 85px;
 }
 
@@ -30,8 +30,13 @@
   margin-left: 20px;
 }
 
+.App-logo:hover{
+  cursor: pointer;
+}
+
 .title-container{
-  width: 50%;
+  width: 40%;
+  font-size: 20px;
 }
 
 .App-title{
@@ -74,6 +79,10 @@
   transform: translate(-50%, -50%);
   color: #ffdb42;
   font-size: 40px;
+}
+
+.intro-1{
+  margin-bottom: 20px;
 }
 
 /*Navigation Bar*/
