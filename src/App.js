@@ -5,8 +5,18 @@ import logo from './lb2.png';
 import './App.css';
 import MainPage from './mainPage';
 import NavBar from './navBar';
-
+import About from './about';
+import Hire from './hire';
+import Portfolio from './portfolio'
 class App extends Component {
+  state={
+    currentPage:''
+  }
+
+  changePage=(page)=>{
+    this.setState({currentPage:page})
+  }
+
   render() {
     return (
       <Router>
@@ -20,7 +30,24 @@ class App extends Component {
         </div>
       </header>
       <Route exact path='/' render={()=>(
-        <MainPage/>
+        <MainPage
+          changePage={this.changePage}
+        />
+      )}/>
+      <Route path='/about' render={()=>(
+        <About
+          changePage={this.changePage}
+        />
+      )}/>
+      <Route path='/portfolio' render={()=>(
+        <Portfolio
+          changePage={this.changePage}
+        />
+      )}/>
+      <Route path='/hire' render={()=>(
+        <Hire
+          changePage={this.changePage}
+        />
       )}/>
       </div>
       </Router>

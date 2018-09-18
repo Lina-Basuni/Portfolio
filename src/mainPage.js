@@ -8,6 +8,11 @@ import NavBar from './navBar';
 
 
 class MainPage extends Component{
+
+  componentWillMount(){
+      this.props.changePage("Main Page")
+  }
+
   render(){
 
     return(
