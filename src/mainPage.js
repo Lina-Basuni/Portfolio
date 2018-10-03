@@ -9,7 +9,7 @@ import NavBar from './navBar';
 
 class MainPage extends Component{
 
-  componentWillMount(){
+  componentDidMount(){
       this.props.changePage("Main Page")
   }
 

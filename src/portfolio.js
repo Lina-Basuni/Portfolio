@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 class Portfolio extends Component{
-  componentWillMount(){
+  componentDidMount(){
       this.props.changePage("Portfolio")
   }
   render(){
