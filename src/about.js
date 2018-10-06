@@ -13,9 +13,9 @@ class About extends Component{
   render(){
 
     return(
-      <div className="aboutContainer">
+      <div className="container">
       <div className="col-1"></div>
-      <div className="aboutContent">
+      <div className="content">
       <p>
         I am a Front-End Web Developer and a Computer Science student ,
         I’m very enthusiastic and determined towards Web Development and Programming ,
