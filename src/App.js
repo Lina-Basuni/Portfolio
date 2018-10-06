@@ -8,6 +8,7 @@ import NavBar from './navBar';
 import About from './about';
 import Hire from './hire';
 import Portfolio from './portfolio'
+import {ImgSrc} from './background.jpg'
 class App extends Component {
   state={
     currentPage:''
@@ -16,6 +17,9 @@ class App extends Component {
   changePage=(page)=>{
     this.setState({currentPage:page})
   }
+
+
+
 
   render() {
     return (

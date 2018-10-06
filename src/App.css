@@ -1,10 +1,12 @@
 .App{
-    height:662px;
-    background-image: url("background.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+
+  /*background-image: url("background.jpg");*/
+  height:662px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  position: relative;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 
@@ -78,11 +80,17 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: #ffdb42;
-  font-size: 40px;
+  width:600px;
+
+
 }
 
 .intro-1{
+  font-size: 60px;
   margin-bottom: 20px;
+}
+.intro-2{
+  font-size: 40px;
 }
 
 /*Navigation Bar*/

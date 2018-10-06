@@ -3,7 +3,9 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 class About extends Component{
   componentDidMount(){
-      this.props.changePage("About Me")
+      this.props.changePage("About Me");
+      document.body.style.backgroundColor='black';
+
   }
   render(){
 
