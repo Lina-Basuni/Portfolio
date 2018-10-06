@@ -11,7 +11,10 @@ class MainPage extends Component{
 
   componentDidMount(){
       this.props.changePage("Main Page");
-      document.body.style.backgroundImage="url('background.jpg')";
+  }
+  componentWillMount(){
+    document.body.style.backgroundImage="url('background.jpg')";
+
   }
 
   render(){

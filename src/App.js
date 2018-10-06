@@ -29,7 +29,9 @@ class App extends Component {
           <Link to="/"><img src={logo} className="App-logo" alt="logo" /></Link>
         </div>
         <div className="title-container">
-          <NavBar/>
+          <NavBar
+            currentPage={this.state.currentPage}
+          />
         </div>
       </header>
       <Route exact path='/' render={()=>(
