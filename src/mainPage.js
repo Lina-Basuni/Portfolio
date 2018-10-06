@@ -3,7 +3,6 @@ import dArrow from './dArrow.png';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import logo from './lb2.png';
-import bgImg from'./background.jpg';
 import './App.css';
 import NavBar from './navBar';
 

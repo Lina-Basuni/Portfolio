@@ -1,11 +1,12 @@
-.App{
-
-  /*background-image: url("background.jpg");*/
+body{
   height:662px;
   background-position: center;
   background-repeat: no-repeat;
   background-size:cover;
   position: relative;
+}
+
+.App{
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -114,12 +115,12 @@ li {
 
 li a {
     display: block;
-    color: white;
+    color: #ffdb42;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 li a:hover {
-    color: #ffdb42;
+    color: black;
 }
