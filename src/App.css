@@ -8,11 +8,12 @@ body{
 
 .App{
   font-family: 'Ubuntu', sans-serif;
+  height: 100vh;
 }
 
 
 .App-header{
-  height: 85px;
+  height: 10vh;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -24,7 +25,7 @@ header{
 }
 
 .App-intro{
-  height: 570px
+  height: 89.9vh;
 }
 
 .logo-container{
@@ -130,6 +131,7 @@ li a:hover {
 
 /**About Page**/
 .container{
+  height: 89.9vh;
   display: flex;
   flex-wrap: wrap;
   width: 100%;

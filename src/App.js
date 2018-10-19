@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import logo from './lb2.png';
@@ -10,11 +11,30 @@ import Hire from './hire';
 import Portfolio from './portfolio'
 class App extends Component {
   state={
-    currentPage:''
+    currentPage:'',
+    pageIsLoaded:' '
   }
+
+  componentWillMount(){
+    this.setState({pageIsLoaded:true})
+    console.log("App Page is on");
+  }
+
+ checkBeforeRenderMainPage=()=>{
+   if (this.state.pageIsLoaded) {
+     console.log("App is loaded");
+     return(<MainPage
+         changePage={this.changePage}
+       /> )
+   }
+   else{
+     console.log("error");
+   }
+ }
 
   changePage=(page)=>{
     this.setState({currentPage:page})
+
   }
 
 
@@ -35,10 +55,8 @@ class App extends Component {
         </div>
       </header>
       <Route exact path='/' render={()=>(
-        <MainPage
-          changePage={this.changePage}
-        />
-      )}/>
+          this.checkBeforeRenderMainPage()
+    )}/>
       <Route path='/about' render={()=>(
         <About
           changePage={this.changePage}

@@ -6,40 +6,41 @@ import logo from './lb2.png';
 import './App.css';
 import NavBar from './navBar';
 
+const $ = window.$;
+
 
 class MainPage extends Component{
 
   componentDidMount(){
-      this.props.changePage("Main Page");
-  }
-  componentWillMount(){
-    document.body.style.backgroundImage="url('background.jpg')";
+    console.log("Main page loads");
+    this.props.changePage("Main Page");
+    console.log("No Error");
 
   }
+
+
 
   render(){
 
-    return(
-      <div>
+      return(
         <div className="App-intro">
-          <div className="mainPage">
-           <div className="main-text">
-              <div className="intro-1">
-                Hello, I'm Lina Basuni
-              </div>
-              <div className="intro-2">
-                And Im a Front-End Web Developer
-              </div>
-            </div>
-            <div className="dArrow-container">
-              <Link to='/about'><img src={dArrow} className="dArrow" alt="arrow" /></Link>
-            </div>
-          </div>
+        <div className="mainPage">
+        <div className="main-text">
+        <div className="intro-1">
+        Hello, I'm Lina Basuni
         </div>
-      </div>
+        <div className="intro-2">
+        And Im a Front-End Web Developer
+        </div>
+        </div>
+        <div className="dArrow-container">
+        <Link to='/about'><img src={dArrow} className="dArrow" alt="arrow" /></Link>
+        </div>
+        </div>
+        </div>
 
-    )
-  }
+      )
+    }
 }
 
 export default MainPage;
