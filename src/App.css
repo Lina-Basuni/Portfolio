@@ -34,11 +34,10 @@ header{
 
 .logo-container{
   width: 60%;
-  height: 85px;
 }
 
 .App-logo{
-  height: 85px;
+  height: 10vh;
   margin-left: 20px;
 }
 
