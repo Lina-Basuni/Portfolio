@@ -34,11 +34,10 @@ header{
 
 .logo-container{
   width: 60%;
-  height: 85px;
 }
 
 .App-logo{
-  height: 85px;
+  height: 10vh;
   margin-left: 20px;
 }
 
@@ -92,8 +91,8 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    height: 85px;
-    margin-top: 20px;
+    height: 10vh;
+    margin-top: 2vh;
 }
 
 li {
