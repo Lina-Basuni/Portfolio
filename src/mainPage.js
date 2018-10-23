@@ -15,6 +15,9 @@ class MainPage extends Component{
     console.log("Main page loads");
     this.props.changePage("Main Page");
     console.log("No Error");
+    var bgImg=document.getElementsByClassName('backgroundImg')[0];
+    bgImg.style.backgroundImage="url('background.jpg')";
+
 
   }
 

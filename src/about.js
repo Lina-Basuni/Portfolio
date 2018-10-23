@@ -6,8 +6,10 @@ import App from './App';
 class About extends Component{
   componentDidMount(){
       this.props.changePage("About Me");
-      document.body.style.backgroundImage="url('')";
-      document.body.style.backgroundColor='white';
+      var bgImg=document.getElementsByClassName('backgroundImg')[0];
+      bgImg.style.backgroundColor='white';
+      bgImg.style.backgroundImage="url(' ')";
+
 
   }
   render(){

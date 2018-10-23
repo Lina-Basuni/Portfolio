@@ -18,6 +18,7 @@ class App extends Component {
   componentWillMount(){
     this.setState({pageIsLoaded:true})
     console.log("App Page is on");
+    
   }
 
  checkBeforeRenderMainPage=()=>{

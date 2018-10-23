@@ -1,9 +1,13 @@
 body{
-  height:662px;
   background-position: center;
   background-repeat: no-repeat;
   background-size:cover;
   position: relative;
+}
+
+.backgroundImg{
+  background-size: cover;
+
 }
 
 .App{
@@ -167,4 +171,35 @@ li a:hover {
   width: 32px;
   height: 80px;
   padding-right: 20px;
+}
+
+/**********Portfolio Section ****************/
+
+.portfolio_container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pFirstPage{
+  width: 100%;
+  border-style: solid;
+  height: 89vh;
+}
+.pBox{
+  width: 100%;
+  border-style: solid;
+  height: 100vh;
+}
+
+.pBox_img{
+  border-style: solid;
+  border-color: red;
+  height: 90vh;
+}
+
+.pBox_title{
+  border-style: solid;
+  border-color: green;
+  height: 10vh;
 }
