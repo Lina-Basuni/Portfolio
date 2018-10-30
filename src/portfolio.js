@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import PBox from './pBox';
 
 class Portfolio extends Component{
   componentDidMount(){
@@ -16,34 +17,11 @@ class Portfolio extends Component{
     return(
       <div className="portfolio_container">
         <div className="pFirstPage">Click Here to Show</div>
-        <div className="pBox">
-          <div className="pBox_img">IMG</div>
-          <div className="pBox_title">TITLE</div>
-        </div>
-        <div className="pBox">
-          <div className="pBox_img">IMG</div>
-          <div className="pBox_title">TITLE</div>
-        </div>
-        <div className="pBox">
-          <div className="pBox_img">IMG</div>
-          <div className="pBox_title">TITLE</div>
-        </div>
-        <div className="pBox">
-          <div className="pBox_img">IMG</div>
-          <div className="pBox_title">TITLE</div>
-        </div>
-        <div className="pBox">
-          <div className="pBox_img">IMG</div>
-          <div className="pBox_title">TITLE</div>
-        </div>
-        <div className="pBox">
-          <div className="pBox_img">IMG</div>
-          <div className="pBox_title">TITLE</div>
-        </div>
-        <div className="pBox">
-          <div className="pBox_img">IMG</div>
-          <div className="pBox_title">TITLE</div>
-        </div>
+          <PBox/>
+          <PBox/>
+          <PBox/>
+          <PBox/>
+          <PBox/>
       </div>
     )
   }
