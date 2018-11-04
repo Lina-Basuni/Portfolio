@@ -1,3 +1,5 @@
+@import "../node_modules/react-image-gallery/styles/css/image-gallery.css";
+
 body{
   background-position: center;
   background-repeat: no-repeat;
@@ -174,31 +176,7 @@ li a:hover {
 
 /**********Portfolio Section ****************/
 
-.portfolio_container{
+.image-gallery-description{
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.pFirstPage{
-  width: 100%;
-  border-style: solid;
-  height: 89vh;
-}
-.pBox{
-  width: 100%;
-  border-style: solid;
-  height: 100vh;
-}
-
-.pBox_img{
-  border-style: solid;
-  border-color: red;
-  height: 90vh;
-}
-
-.pBox_title{
-  border-style: solid;
-  border-color: green;
-  height: 10vh;
+  text-align: center;
 }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link ,Redirect } from 'react-router-dom';
 
 import logo from './lb2.png';
 import './App.css';
@@ -18,7 +18,7 @@ class App extends Component {
   componentWillMount(){
     this.setState({pageIsLoaded:true})
     console.log("App Page is on");
-    
+
   }
 
  checkBeforeRenderMainPage=()=>{

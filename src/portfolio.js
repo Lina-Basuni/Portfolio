@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link , Redirect} from 'react-router-dom';
 import PBox from './pBox';
+
+import ImageGallery from 'react-image-gallery';
+
 
 class Portfolio extends Component{
   componentDidMount(){
@@ -14,16 +17,28 @@ class Portfolio extends Component{
   }
   render(){
 
-    return(
-      <div className="portfolio_container">
-        <div className="pFirstPage">Click Here to Show</div>
-          <PBox/>
-          <PBox/>
-          <PBox/>
-          <PBox/>
-          <PBox/>
-      </div>
-    )
+    const images = [
+      {
+        original:'memorygame.png',
+        thumbnail: 'https://via.placeholder.com/20x20',
+        description:<Redirect from="/portfolio" to="https://lina-basuni.github.io/Memory_Game/" />
+
+      },
+      {
+        original: 'https://via.placeholder.com/1600x500',
+        thumbnail: 'https://via.placeholder.com/20x20',
+        description:"Webpage 2"
+      },
+      {
+        original: 'https://via.placeholder.com/1600x500',
+        thumbnail: 'https://via.placeholder.com/20x20',
+        description:"Webpage 3"
+      }
+    ]
+
+    return (
+      <ImageGallery items={images} showPlayButton={false} showThumbnails={false} />
+    );
   }
 }
 
