@@ -177,6 +177,17 @@ li a:hover {
 /**********Portfolio Section ****************/
 
 .image-gallery-description{
-  width: 100%;
+
   text-align: center;
+}
+
+.image-gallery-description a{
+  display: block;
+  color: #ffdb42;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.image-gallery-description a:hover{
+  color: white;
 }

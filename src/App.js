@@ -73,6 +73,7 @@ class App extends Component {
           changePage={this.changePage}
         />
       )}/>
+      <Route path='/memorygame' component={() => window.location = 'https://lina-basuni.github.io/Memory_Game/'}/>
       </div>
       </Router>
     );

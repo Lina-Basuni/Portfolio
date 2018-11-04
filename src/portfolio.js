@@ -21,7 +21,8 @@ class Portfolio extends Component{
       {
         original:'memorygame.png',
         thumbnail: 'https://via.placeholder.com/20x20',
-        description:<Redirect from="/portfolio" to="https://lina-basuni.github.io/Memory_Game/" />
+        description:<Link to="/memorygame">Visit Page</Link>
+
 
       },
       {
